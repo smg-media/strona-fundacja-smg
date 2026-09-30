@@ -1,0 +1,1 @@
+# strona-fundacja-smg
