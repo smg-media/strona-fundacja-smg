@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fundacja SMG – Edukacja bez barier. Przyszłość bez granic.</title>
+<meta name="description" content="Fundacja SMG z Gdańska pomaga dzieciom z dysfunkcjami w edukacji. Zostań partnerem biznesowym lub przekaż 1,5% podatku.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A2A66;--blue:#1F6FE0;--sky:#DCE9FF;--sun:#FFD21F;--ink:#14233F;--mute:#51607C;--paper:#F4F7FC;--w:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font:17px/1.65 "Nunito Sans",system-ui,sans-serif;color:var(--ink);background:var(--w)}
+h1,h2,h3{font-family:"Bricolage Grotesque","Trebuchet MS",sans-serif;line-height:1.12;margin:0;color:var(--navy)}
+img{display:block;max-width:100%}a{color:inherit}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.eyebrow{font:700 13px/1 "Nunito Sans";letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);border-bottom:1px solid #E1E8F4}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 19px "Bricolage Grotesque",sans-serif;color:var(--navy)}
+.nav ul{display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0;font-weight:700;font-size:15px}
+.nav a{text-decoration:none}.nav ul a:hover{color:var(--blue)}
+.btn{display:inline-block;background:var(--navy);color:var(--w);font-weight:700;padding:13px 26px;border-radius:6px;text-decoration:none}
+.btn:hover{background:var(--blue)}.btn.sun{background:var(--sun);color:var(--ink)}.btn.sun:hover{background:var(--w)}
+.btn.line{background:transparent;color:var(--w);box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}.btn.line:hover{background:var(--w);color:var(--navy)}
+.nav .btn{padding:9px 18px;color:var(--w)}
+.hero{background:var(--navy);color:var(--w);position:relative;overflow:hidden}
+.hero .wrap{padding-top:96px;padding-bottom:104px;position:relative;z-index:1}
+.hero h1{color:var(--w);font-size:clamp(40px,6.5vw,76px);font-weight:800;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero p{max-width:36em;font-size:20px;color:#CFDCF5;margin:26px 0 38px}
+.hero .btn.sun{margin-right:12px}
+.bars{position:absolute;right:0;top:0;bottom:0;display:flex;gap:12px}.bars i{width:clamp(20px,6vw,76px);background:var(--blue)}.bars i:nth-child(2){background:#4E9BFF}.bars i:nth-child(3){background:#0D3A8C}
+.facts{background:var(--paper);border-bottom:1px solid #E1E8F4}
+.facts ul{display:grid;grid-template-columns:repeat(3,1fr);list-style:none;margin:0;padding:28px 0;gap:24px}
+.facts b{display:block;font:800 22px "Bricolage Grotesque";color:var(--navy)}.facts span{color:var(--mute);font-size:15px}
+section{padding:92px 0}
+h2{font-size:clamp(30px,4vw,44px);font-weight:800;margin-bottom:20px}
+.lead{max-width:38em;color:var(--mute);font-size:19px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.card{border:1px solid #DDE5F2;border-radius:8px;padding:32px;background:var(--w)}
+.card .n{font:800 15px "Bricolage Grotesque";color:var(--blue);letter-spacing:.1em}
+.card h3{font-size:22px;margin:14px 0 10px}.card p{margin:0;color:var(--mute)}
+.biz{background:var(--paper)}
+.biz .cta{margin-top:40px;background:var(--navy);color:var(--w);border-radius:8px;padding:36px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.biz .cta h3{color:var(--w);font-size:26px}.biz .cta p{margin:6px 0 0;color:#CFDCF5}
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.post img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:8px}
+.post time{display:block;margin:18px 0 6px;font:700 13px "Nunito Sans";letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.post h3{font-size:21px;margin-bottom:8px}.post h3 a{text-decoration:none;color:inherit}.post h3 a:hover{color:var(--blue)}.more{color:var(--blue);font-weight:700}.post p{margin:0;color:var(--mute);font-size:16px}
+.sup{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.tile{border:1px solid #DDE5F2;border-radius:8px;overflow:hidden;background:var(--w);display:flex;flex-direction:column}
+.tile img{width:100%;height:auto}.tile-b{padding:28px 30px 32px}.tile-b h3{font-size:24px;margin-bottom:10px}.tile-b p{margin:0 0 20px;color:var(--mute)}
+.goal{font-size:19px;color:var(--ink)!important;margin:0 0 18px!important}.note{font-size:15px;margin:0!important;padding-top:16px;border-top:1px solid #DDE5F2}.note a{color:var(--blue);font-weight:700}
+.kr{font:800 32px "Bricolage Grotesque";color:var(--navy);letter-spacing:.03em;margin-bottom:6px}
+.contact{background:var(--paper)}.contact dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 32px;margin:0}
+.contact dt{font-weight:700;color:var(--navy)}.contact dd{margin:0}
+footer{background:var(--ink);color:#B9C6E0;padding:28px 0;font-size:14px}
+@media(max-width:860px){
+ .nav ul li:not(:last-child){display:none}
+ .split,.cards,.news,.sup,.facts ul{grid-template-columns:1fr}.split{gap:32px}
+ .biz .cta{flex-direction:column;align-items:flex-start}.bars{opacity:.3}section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+ <a class="brand" href="#" aria-label="Fundacja SMG"><svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" fill="#1F6FE0"/><rect x="15" width="14" height="44" fill="#4E9BFF"/><rect x="29" width="15" height="44" fill="#0A3D91"/><text x="22" y="30" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="14" fill="#fff">SMG</text></svg>Fundacja SMG</a>
+ <ul><li><a href="#o-nas">O nas</a></li><li><a href="#dla-firm">Dla firm</a></li><li><a href="#aktualnosci">Aktualności</a></li><li><a href="#kontakt">Kontakt</a></li><li><a class="btn" href="#wesprzyj">Wesprzyj</a></li></ul>
+</div></header>
+<main>
+<div class="hero"><div class="bars" aria-hidden="true"><i></i><i></i><i></i></div>
+ <div class="wrap">
+  <h1>Edukacja bez barier. <em>Przyszłość bez granic.</em></h1>
+  <p>Pomagamy dzieciom z dysfunkcjami dogonić rówieśników, poczuć się pewniej i odnaleźć własną ścieżkę. Zostań naszym partnerem.</p>
+  <a class="btn sun" href="#dla-firm">Współpraca dla firm</a><a class="btn line" href="#wesprzyj">Wesprzyj dzieci</a>
+ </div></div>
+<div class="facts"><div class="wrap"><ul>
+ <li><b>Gdańsk</b><span>Fundacja z siedzibą w Gdańsku</span></li>
+ <li><b>KRS 0001163511</b><span>Dane rejestrowe jawne i weryfikowalne</span></li>
+ <li><b>Konkretny cel</b><span>Edukacja i samodzielność dzieci</span></li></ul></div></div>
+
+<section id="o-nas"><div class="wrap split">
+ <div><div class="eyebrow">O fundacji</div><h2>Realna zmiana w życiu dzieci</h2>
+  <p class="lead">Razem z przedsiębiorcami tworzymy edukację bez barier dla dzieci z niepełnosprawnościami. Wspieramy rozwój i samodzielność tych, którzy najbardziej tego potrzebują, tak aby mogły być sobą w świecie, który je akceptuje.</p></div>
+ <img src="terapia.jpg" alt="Terapeutka rozmawia z dziewczynką, pokazując rysunek buzi" loading="lazy">
+</div>
+<div class="wrap"><div class="cards">
+ <div class="card"><span class="n">01</span><h3>Zajęcia terapeutyczne</h3><p>Wsparcie dopasowane do potrzeb dziecka, dzięki któremu świat staje się bardziej zrozumiały.</p></div>
+ <div class="card"><span class="n">02</span><h3>Warsztaty społeczne</h3><p>Zajęcia, na których dzieci budują pewność siebie i nawiązują pierwsze przyjaźnie.</p></div>
+ <div class="card"><span class="n">03</span><h3>Lekcje wyrównawcze</h3><p>Dodatkowa nauka, która pomaga dogonić rówieśników i uwierzyć we własne siły.</p></div>
+</div></div></section>
+
+<section class="biz" id="dla-firm"><div class="wrap">
+ <div class="eyebrow">Dla firm i partnerów</div><h2>Zostań partnerem Fundacji SMG</h2>
+ <p class="lead">Współpraca z nami to czytelny, mierzalny sposób na działania odpowiedzialnego biznesu. Dobierzemy formę wsparcia do możliwości Twojej firmy.</p>
+ <div class="cards">
+  <div class="card"><span class="n">A</span><h3>Wsparcie finansowe</h3><p>Darowizna jednorazowa lub regularna na konkretny cel: zajęcia, warsztaty, wydarzenia dla dzieci.</p></div>
+  <div class="card"><span class="n">B</span><h3>Partnerstwo wydarzeń</h3><p>Współorganizacja pikników, warsztatów i spotkań, z widocznością marki partnera.</p></div>
+  <div class="card"><span class="n">C</span><h3>Wsparcie rzeczowe i wolontariat</h3><p>Sprzęt, materiały edukacyjne, usługi lub zaangażowanie pracowników Twojej firmy.</p></div>
+ </div>
+ <!-- TODO: dopisać korzyści podatkowe i zasady po konsultacji z księgową, zależą od statusu organizacji -->
+ <div class="cta"><div><h3>Porozmawiajmy o współpracy</h3><p>Napisz do nas, a odpowiemy z propozycją dopasowaną do Twojej firmy.</p></div>
+  <a class="btn sun" href="mailto:biuro@fundacjasmg.com.pl?subject=Wsp%C3%B3%C5%82praca%20z%20Fundacj%C4%85%20SMG">Napisz do nas</a></div>
+</div></section>
+
+<section id="aktualnosci"><div class="wrap">
+ <div class="eyebrow">Aktualności</div><h2>Co ostatnio robiliśmy</h2>
+ <!-- TODO: podmienić zdjęcia (zdjęcia tymczasowe) i uzupełnić opisy -->
+ <div class="news">
+  <article class="post"><img src="forum.jpg" alt="Prelegentka z mikrofonem na Gdyńskim Forum Organizacji Pozarządowych" loading="lazy"><time datetime="2026-10-02">2 października 2026</time><h3><a href="https://www.gdynia.pl/mieszkaniec/spoleczenstwo,7580/gdynskie-forum-pozarzadowe-wylonilo-wyjatkowych-spolecznikow,598854" target="_blank" rel="noopener">Gdyńskie Forum Organizacji Pozarządowych</a></h3><p>Relację z forum znajdziesz na stronie gdynia.pl. <a class="more" href="https://www.gdynia.pl/mieszkaniec/spoleczenstwo,7580/gdynskie-forum-pozarzadowe-wylonilo-wyjatkowych-spolecznikow,598854" target="_blank" rel="noopener">Czytaj więcej</a></p></article>
+  <article class="post"><img src="piknik.jpg" alt="Piknik country dla dzieci: dzieci w kowbojskich kapeluszach na łące z końmi" loading="lazy" style="object-position:30% 50%"><time datetime="2026-08-15">15 sierpnia 2026</time><h3>Piknik country dla dzieci z dysfunkcjami</h3><p>Tu pojawi się opis pikniku w kowbojskim stylu.</p></article>
+  <article class="post"><img src="hipoterapia.jpg" alt="Dziecko głaszcze konia na łące podczas zajęć hipoterapii" loading="lazy"><time datetime="2026-06-06">6 czerwca 2026</time><h3>Naturalne warsztaty i hipoterapia</h3><p>Tu pojawi się opis warsztatów i zajęć z hipoterapii.</p></article>
+ </div></div></section>
+
+<section id="wesprzyj" style="background:var(--paper)"><div class="wrap">
+ <div class="eyebrow">Wesprzyj nas</div><h2>Każda złotówka to krok ku lepszemu jutru</h2>
+ <div class="sup">
+  <article class="tile"><img src="https://zrzutka.pl/medias/fundraisers/covers/syf53d/main/pl/fundraiser_unverified/81d69ea18b407033d03d20d47045a504.jpg.jpeg" alt="Zdjęcie zbiórki Fundacji SMG na Zrzutka.pl" loading="lazy">
+   <div class="tile-b"><h3>Zbiórka na Zrzutka.pl</h3><p>Wesprzyj zajęcia socjoterapeutyczne, warsztaty i lekcje wyrównawcze dla dzieci w spektrum autyzmu i z ADHD.</p><a class="btn" href="https://zrzutka.pl/syf53d" target="_blank" rel="noopener">Wpłać na Zrzutka.pl</a></div></article>
+  <article class="tile"><img src="podatek.jpg" alt="Twoje 1,5% daje nadzieję" loading="lazy">
+   <div class="tile-b"><h3>Przekaż 1,5% podatku</h3><p>W swoim zeznaniu podatkowym wskaż numer KRS fundacji:</p><div class="kr">0000270261</div><p class="goal"><b>Cel szczegółowy:</b> FUNDACJA SMG 29910</p><p class="note">Wspiera nas Fundacja Młodzi-Młodym. <a href="https://fsmm.pl/partner/fundacja-smg/" target="_blank" rel="noopener">Dowiedz się więcej</a></p></div></article>
+ </div></div></section>
+
+<section class="contact" id="kontakt"><div class="wrap">
+ <div class="eyebrow">Kontakt</div><h2>Skontaktuj się z nami</h2>
+ <dl><dt>E-mail</dt><dd><a href="mailto:biuro@fundacjasmg.com.pl">biuro@fundacjasmg.com.pl</a></dd>
+ <dt>Adres</dt><dd>Słowiańska 28/49, 80-381 Gdańsk</dd><dt>KRS</dt><dd>0001163511</dd><dt>NIP</dt><dd>5842866168</dd><dt>REGON</dt><dd>541252139</dd></dl>
+ <!-- TODO: linki do Facebooka i LinkedIna; numer konta -->
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Fundacja SMG. Wszelkie prawa zastrzeżone.</div></footer>
+</body></html>
